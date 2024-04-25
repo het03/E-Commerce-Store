@@ -3,7 +3,7 @@ import getColors from "@/actions/get-colors";
 import getProducts from "@/actions/get-products";
 import getSizes from "@/actions/get-sizes";
 import Billboard from "@/components/billboard";
-import Conatainer from "@/components/ui/container";
+import Container from "@/components/ui/container";
 import Filter from "@/app/(routes)/category/[categoryId]/components/filter";
 import NoResults from "@/components/ui/no-results";
 import ProductCard from "@/components/ui/product-card";
@@ -38,7 +38,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
 
     return ( 
         <div className="bg-white ">
-            <Conatainer>
+            <Container>
                 <Billboard data={category.billboard}/>
                 <div className="px-4 sm:px-6 lg:px-8 pb-24">
                     <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">
@@ -65,7 +65,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
                         </div>
                     </div>
                 </div>
-            </Conatainer>
+            </Container>
         </div>
      );
 }
