@@ -55,7 +55,7 @@ const Summary = () => {
             className="w-full mt-6"
             onClick={onCheckout}
             >
-                Cheeckout
+                Checkout
             </Button>
         </div>
      );
